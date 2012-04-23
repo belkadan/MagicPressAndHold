@@ -10,6 +10,7 @@
 		8C78418A1545C4510013F2EE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7841891545C4510013F2EE /* Cocoa.framework */; };
 		8C7841941545C4510013F2EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C7841921545C4510013F2EE /* InfoPlist.strings */; };
 		8C78419D1545C5B60013F2EE /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78419C1545C5B60013F2EE /* Server.m */; };
+		8C78419F1545C7CA0013F2EE /* JRSwizzle in Resources */ = {isa = PBXBuildFile; fileRef = 8C78419E1545C7CA0013F2EE /* JRSwizzle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		8C7841951545C4510013F2EE /* MagicPressAndHold-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MagicPressAndHold-Prefix.pch"; sourceTree = "<group>"; };
 		8C78419B1545C5B60013F2EE /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
 		8C78419C1545C5B60013F2EE /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
+		8C78419E1545C7CA0013F2EE /* JRSwizzle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = JRSwizzle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				8C78418F1545C4510013F2EE /* MagicPressAndHold */,
+				8C78419E1545C7CA0013F2EE /* JRSwizzle */,
 				8C7841881545C4510013F2EE /* Frameworks */,
 				8C7841871545C4510013F2EE /* Products */,
 			);
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C7841941545C4510013F2EE /* InfoPlist.strings in Resources */,
+				8C78419F1545C7CA0013F2EE /* JRSwizzle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
