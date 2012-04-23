@@ -1,0 +1,264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C78418A1545C4510013F2EE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7841891545C4510013F2EE /* Cocoa.framework */; };
+		8C7841941545C4510013F2EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C7841921545C4510013F2EE /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8C7841861545C4510013F2EE /* MagicPressAndHold.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicPressAndHold.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C7841891545C4510013F2EE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8C78418C1545C4510013F2EE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		8C78418D1545C4510013F2EE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8C78418E1545C4510013F2EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8C7841911545C4510013F2EE /* MagicPressAndHold-Info.plist */ = {isa = PBXFileReference; path = "MagicPressAndHold-Info.plist"; sourceTree = "<group>"; };
+		8C7841931545C4510013F2EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8C7841951545C4510013F2EE /* MagicPressAndHold-Prefix.pch */ = {isa = PBXFileReference; path = "MagicPressAndHold-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C7841831545C4510013F2EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C78418A1545C4510013F2EE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C78417B1545C4500013F2EE = {
+			isa = PBXGroup;
+			children = (
+				8C78418F1545C4510013F2EE /* MagicPressAndHold */,
+				8C7841881545C4510013F2EE /* Frameworks */,
+				8C7841871545C4510013F2EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C7841871545C4510013F2EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C7841861545C4510013F2EE /* MagicPressAndHold.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C7841881545C4510013F2EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C7841891545C4510013F2EE /* Cocoa.framework */,
+				8C78418B1545C4510013F2EE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C78418B1545C4510013F2EE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C78418C1545C4510013F2EE /* AppKit.framework */,
+				8C78418D1545C4510013F2EE /* CoreData.framework */,
+				8C78418E1545C4510013F2EE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		8C78418F1545C4510013F2EE /* MagicPressAndHold */ = {
+			isa = PBXGroup;
+			children = (
+				8C7841901545C4510013F2EE /* Supporting Files */,
+			);
+			path = MagicPressAndHold;
+			sourceTree = "<group>";
+		};
+		8C7841901545C4510013F2EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C7841911545C4510013F2EE /* MagicPressAndHold-Info.plist */,
+				8C7841921545C4510013F2EE /* InfoPlist.strings */,
+				8C7841951545C4510013F2EE /* MagicPressAndHold-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C7841851545C4510013F2EE /* MagicPressAndHold */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C7841981545C4510013F2EE /* Build configuration list for PBXNativeTarget "MagicPressAndHold" */;
+			buildPhases = (
+				8C7841821545C4510013F2EE /* Sources */,
+				8C7841831545C4510013F2EE /* Frameworks */,
+				8C7841841545C4510013F2EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicPressAndHold;
+			productName = MagicPressAndHold;
+			productReference = 8C7841861545C4510013F2EE /* MagicPressAndHold.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C78417D1545C4500013F2EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Belkadan Software";
+			};
+			buildConfigurationList = 8C7841801545C4500013F2EE /* Build configuration list for PBXProject "MagicPressAndHold" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8C78417B1545C4500013F2EE;
+			productRefGroup = 8C7841871545C4510013F2EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C7841851545C4510013F2EE /* MagicPressAndHold */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C7841841545C4510013F2EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C7841941545C4510013F2EE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C7841821545C4510013F2EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8C7841921545C4510013F2EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C7841931545C4510013F2EE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C7841961545C4510013F2EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8C7841971545C4510013F2EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8C7841991545C4510013F2EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MagicPressAndHold/MagicPressAndHold-Prefix.pch";
+				INFOPLIST_FILE = "MagicPressAndHold/MagicPressAndHold-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		8C78419A1545C4510013F2EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MagicPressAndHold/MagicPressAndHold-Prefix.pch";
+				INFOPLIST_FILE = "MagicPressAndHold/MagicPressAndHold-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C7841801545C4500013F2EE /* Build configuration list for PBXProject "MagicPressAndHold" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C7841961545C4510013F2EE /* Debug */,
+				8C7841971545C4510013F2EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C7841981545C4510013F2EE /* Build configuration list for PBXNativeTarget "MagicPressAndHold" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C7841991545C4510013F2EE /* Debug */,
+				8C78419A1545C4510013F2EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C78417D1545C4500013F2EE /* Project object */;
+}
