@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8C78418A1545C4510013F2EE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7841891545C4510013F2EE /* Cocoa.framework */; };
 		8C7841941545C4510013F2EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C7841921545C4510013F2EE /* InfoPlist.strings */; };
+		8C78419D1545C5B60013F2EE /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78419C1545C5B60013F2EE /* Server.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,9 +18,11 @@
 		8C78418C1545C4510013F2EE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		8C78418D1545C4510013F2EE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8C78418E1545C4510013F2EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		8C7841911545C4510013F2EE /* MagicPressAndHold-Info.plist */ = {isa = PBXFileReference; path = "MagicPressAndHold-Info.plist"; sourceTree = "<group>"; };
+		8C7841911545C4510013F2EE /* MagicPressAndHold-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MagicPressAndHold-Info.plist"; sourceTree = "<group>"; };
 		8C7841931545C4510013F2EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8C7841951545C4510013F2EE /* MagicPressAndHold-Prefix.pch */ = {isa = PBXFileReference; path = "MagicPressAndHold-Prefix.pch"; sourceTree = "<group>"; };
+		8C7841951545C4510013F2EE /* MagicPressAndHold-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MagicPressAndHold-Prefix.pch"; sourceTree = "<group>"; };
+		8C78419B1545C5B60013F2EE /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		8C78419C1545C5B60013F2EE /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 		8C78418F1545C4510013F2EE /* MagicPressAndHold */ = {
 			isa = PBXGroup;
 			children = (
+				8C78419B1545C5B60013F2EE /* Server.h */,
+				8C78419C1545C5B60013F2EE /* Server.m */,
 				8C7841901545C4510013F2EE /* Supporting Files */,
 			);
 			path = MagicPressAndHold;
@@ -150,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C78419D1545C5B60013F2EE /* Server.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,10 +223,11 @@
 		8C7841991545C4510013F2EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "/System/Library/Input Methods/PressAndHold.app/Contents/MacOS/PressAndHold";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MagicPressAndHold/MagicPressAndHold-Prefix.pch";
 				INFOPLIST_FILE = "MagicPressAndHold/MagicPressAndHold-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Application Support/SIMBL/Plugins";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -229,10 +236,11 @@
 		8C78419A1545C4510013F2EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "/System/Library/Input Methods/PressAndHold.app/Contents/MacOS/PressAndHold";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MagicPressAndHold/MagicPressAndHold-Prefix.pch";
 				INFOPLIST_FILE = "MagicPressAndHold/MagicPressAndHold-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Application Support/SIMBL/Plugins";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};

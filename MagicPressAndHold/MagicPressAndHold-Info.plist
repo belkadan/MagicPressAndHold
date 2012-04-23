@@ -25,6 +25,17 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2012 Belkadan Software. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string></string>
+	<string>ComBelkadanPressAndHold_Server</string>
+	<key>SIMBLTargetApplications</key>
+	<array>
+		<dict>
+			<key>BundleIdentifier</key>
+			<string>com.apple.PressAndHold</string>
+			<key>MinBundleVersion</key>
+			<string>29</string>
+			<key>MaxBundleVersion</key>
+			<string>29.2</string>
+		</dict>
+	</array>
 </dict>
 </plist>
