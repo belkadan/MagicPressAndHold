@@ -12,6 +12,9 @@
 		8C78418A1545C4510013F2EE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7841891545C4510013F2EE /* Cocoa.framework */; };
 		8C7841941545C4510013F2EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C7841921545C4510013F2EE /* InfoPlist.strings */; };
 		8C78419D1545C5B60013F2EE /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78419C1545C5B60013F2EE /* Server.m */; };
+		8CC7A7651545DF2F003F127C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8CC7A7641545DF2F003F127C /* main.c */; };
+		8CC7A76E1545DFB7003F127C /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC7A76D1545DFB7003F127C /* Carbon.framework */; };
+		8CC7A7701545DFEA003F127C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC7A76F1545DFE9003F127C /* CoreFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8CC7A75D1545DF2F003F127C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8C2AD5891545C95900A555AE /* InputMethodKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputMethodKit.framework; path = ../../../../../System/Library/Frameworks/InputMethodKit.framework; sourceTree = "<group>"; };
 		8C69D8C91545D4E100F98E1C /* JRSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
@@ -107,6 +122,11 @@
 		8C78419B1545C5B60013F2EE /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
 		8C78419C1545C5B60013F2EE /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
 		8C7841A71545C85C0013F2EE /* PressAndHold.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PressAndHold.h; sourceTree = "<group>"; };
+		8CC7A75F1545DF2F003F127C /* MagicPressAndHold-Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "MagicPressAndHold-Test"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC7A7641545DF2F003F127C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		8CC7A76D1545DFB7003F127C /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = ../../../../../System/Library/Frameworks/Carbon.framework; sourceTree = "<group>"; };
+		8CC7A76F1545DFE9003F127C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		8CC7A7721545E14B003F127C /* MagicPressAndHold-Test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MagicPressAndHold-Test-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +136,15 @@
 			files = (
 				8C78418A1545C4510013F2EE /* Cocoa.framework in Frameworks */,
 				8C2AD58A1545C95900A555AE /* InputMethodKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC7A75C1545DF2F003F127C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CC7A7701545DFEA003F127C /* CoreFoundation.framework in Frameworks */,
+				8CC7A76E1545DFB7003F127C /* Carbon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +207,7 @@
 			children = (
 				8C78418F1545C4510013F2EE /* MagicPressAndHold */,
 				8C69D8C81545D4E100F98E1C /* JRSwizzle */,
+				8CC7A7631545DF2F003F127C /* MagicPressAndHold-Test */,
 				8C7841881545C4510013F2EE /* Frameworks */,
 				8C7841871545C4510013F2EE /* Products */,
 			);
@@ -187,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				8C7841861545C4510013F2EE /* MagicPressAndHold.bundle */,
+				8CC7A75F1545DF2F003F127C /* MagicPressAndHold-Test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,8 +225,10 @@
 		8C7841881545C4510013F2EE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8CC7A76D1545DFB7003F127C /* Carbon.framework */,
 				8C2AD5891545C95900A555AE /* InputMethodKit.framework */,
 				8C7841891545C4510013F2EE /* Cocoa.framework */,
+				8CC7A76F1545DFE9003F127C /* CoreFoundation.framework */,
 				8C78418B1545C4510013F2EE /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -232,6 +265,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8CC7A7631545DF2F003F127C /* MagicPressAndHold-Test */ = {
+			isa = PBXGroup;
+			children = (
+				8CC7A7641545DF2F003F127C /* main.c */,
+				8CC7A7721545E14B003F127C /* MagicPressAndHold-Test-Prefix.pch */,
+			);
+			path = "MagicPressAndHold-Test";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -251,6 +293,23 @@
 			productName = MagicPressAndHold;
 			productReference = 8C7841861545C4510013F2EE /* MagicPressAndHold.bundle */;
 			productType = "com.apple.product-type.bundle";
+		};
+		8CC7A75E1545DF2F003F127C /* MagicPressAndHold-Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CC7A76A1545DF30003F127C /* Build configuration list for PBXNativeTarget "MagicPressAndHold-Test" */;
+			buildPhases = (
+				8CC7A75B1545DF2F003F127C /* Sources */,
+				8CC7A75C1545DF2F003F127C /* Frameworks */,
+				8CC7A75D1545DF2F003F127C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MagicPressAndHold-Test";
+			productName = "MagicPressAndHold-Test";
+			productReference = 8CC7A75F1545DF2F003F127C /* MagicPressAndHold-Test */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -280,6 +339,7 @@
 			projectRoot = "";
 			targets = (
 				8C7841851545C4510013F2EE /* MagicPressAndHold */,
+				8CC7A75E1545DF2F003F127C /* MagicPressAndHold-Test */,
 			);
 		};
 /* End PBXProject section */
@@ -361,6 +421,14 @@
 			files = (
 				8C69D9011545D4EF00F98E1C /* JRSwizzle.m in Sources */,
 				8C78419D1545C5B60013F2EE /* Server.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC7A75B1545DF2F003F127C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CC7A7651545DF2F003F127C /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +519,24 @@
 			};
 			name = Release;
 		};
+		8CC7A76B1545DF30003F127C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MagicPressAndHold-Test/MagicPressAndHold-Test-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8CC7A76C1545DF30003F127C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MagicPressAndHold-Test/MagicPressAndHold-Test-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -468,6 +554,15 @@
 			buildConfigurations = (
 				8C7841991545C4510013F2EE /* Debug */,
 				8C78419A1545C4510013F2EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CC7A76A1545DF30003F127C /* Build configuration list for PBXNativeTarget "MagicPressAndHold-Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CC7A76B1545DF30003F127C /* Debug */,
+				8CC7A76C1545DF30003F127C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
