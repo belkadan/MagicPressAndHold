@@ -25,12 +25,14 @@
 
 #pragma mark -
 
-- (NSString *)ComBelkadanPressAndHold_accentsStringForString:(NSString *)string language:(NSString *)language
+- (NSString *)ComBelkadanPressAndHold_accentsStringForString:(NSString *)input language:(NSString *)language
 {
-	NSLog(@"%@ (%@ / %@)", string, language, [language class]);
-	id result = [self ComBelkadanPressAndHold_accentsStringForString:string language:language];
-	NSLog(@"-> %@ (%@)", result, [result class]);
-	return result;
+	if ([language length] == 0) {
+		language = [[NSLocale currentLocale] objectForKey:NSLocaleLanguageCode];
+	}
+
+	// Returns a space-separated list of possible replacements for the input string.
+	return [self ComBelkadanPressAndHold_accentsStringForString:input language:language];
 }
 
 @end
