@@ -93,6 +93,7 @@
 		8C0641A71546032900A6F6D1 /* MagicInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicInputController.h; sourceTree = "<group>"; };
 		8C0641A81546032900A6F6D1 /* MagicInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicInputController.m; sourceTree = "<group>"; };
 		8C2AD5891545C95900A555AE /* InputMethodKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputMethodKit.framework; path = ../../../../../System/Library/Frameworks/InputMethodKit.framework; sourceTree = "<group>"; };
+		8C2E43E5154611C300AF08FF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		8C69D8C91545D4E100F98E1C /* JRSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
 		8C69D8CA1545D4E100F98E1C /* JRSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
 		8C69D8CC1545D4E100F98E1C /* 10.3 Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "10.3 Test-Info.plist"; sourceTree = "<group>"; };
@@ -208,6 +209,7 @@
 		8C78417B1545C4500013F2EE = {
 			isa = PBXGroup;
 			children = (
+				8C2E43E5154611C300AF08FF /* README.md */,
 				8C78418F1545C4510013F2EE /* MagicPressAndHold */,
 				8C69D8C81545D4E100F98E1C /* JRSwizzle */,
 				8CC7A7631545DF2F003F127C /* MagicPressAndHold-Test */,
